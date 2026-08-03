@@ -1,7 +1,6 @@
 import React from "react";
 import {
   SiHtml5,
-  SiCss3,
   SiJavascript,
   SiReact,
   SiBootstrap,
