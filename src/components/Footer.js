@@ -6,6 +6,7 @@ const links = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
+  { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
 ];
@@ -15,7 +16,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <a href="#home" className="footer__logo">
-          Payal<span>&lt;/&gt;</span>
+          Payal Gupta<span></span>
         </a>
 
         <nav className="footer__links">
