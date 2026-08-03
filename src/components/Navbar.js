@@ -6,7 +6,7 @@ const links = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
-   { href: "#experience", label: "Experience" },
+  { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
 ];
@@ -31,7 +31,7 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
       <div className="container navbar__inner">
         <a href="#home" className="navbar__logo">
-          Payal<span>&lt;/&gt;</span>
+          Payal Gupta<span></span>
         </a>
 
         <nav className="navbar__links">
