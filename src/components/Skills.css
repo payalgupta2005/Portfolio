@@ -1,0 +1,47 @@
+.skills__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 60px;
+}
+
+.skills__row {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  column-gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.skills__icon {
+  grid-row: 1 / 3;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.skills__name {
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+
+.skills__dots {
+  grid-column: 2;
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.skills__dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 720px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+}
