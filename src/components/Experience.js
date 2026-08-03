@@ -1,6 +1,6 @@
 import React from "react";
 import "./Experience.css";
-import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { FaBriefcase, FaCalendarAlt } from "react-icons/fa";
 
 const Experience = () => {
   return (
