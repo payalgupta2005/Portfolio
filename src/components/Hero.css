@@ -96,12 +96,18 @@
   justify-content: center;
 }
 
-.hero__avatar {
-  width: 82%;
-  height: 82%;
-  border-radius: 50%;
-  object-fit: cover;
+.hero__monogram {
+  font-size: 6.5rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  user-select: none;
 }
+
 .hero__badge {
   position: absolute;
   width: 52px;
@@ -161,5 +167,12 @@
   }
   .hero__visual {
     margin-top: 40px;
+  }
+  .hero__monogram {
+    font-size: 5rem;
+  }
+  .hero__ring {
+    width: 260px;
+    height: 260px;
   }
 }

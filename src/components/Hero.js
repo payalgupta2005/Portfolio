@@ -1,9 +1,13 @@
 import React from "react";
 import { FiDownload } from "react-icons/fi";
 import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
-import { SiReact, SiDotnet, SiHtml5 } from "react-icons/si";
+import { SiReact, SiDotnet, SiMysql } from "react-icons/si";
 import "./Hero.css";
-import Profile from "../assets/profile2.jpeg";
+
+const EMAIL = "payalgupta020405@gmail.com";
+const GMAIL_COMPOSE = `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}&su=${encodeURIComponent(
+  "Hello Payal"
+)}`;
 
 export default function Hero() {
   return (
@@ -19,27 +23,34 @@ export default function Hero() {
           </h1>
           <p className="hero__role">Full Stack Developer</p>
           <p className="hero__desc">
-            Building responsive, user-friendly web applications with React.js,
-            ASP.NET and MySQL — crafted with clean code and precision.
+            Building secure, scalable web applications with React.js,
+            ASP.NET Web API and MySQL. Currently building the SkillJobz job
+            portal at Bluglint Solutions.
           </p>
 
           <div className="hero__actions">
             <a
               className="btn btn-primary"
-              href={process.env.PUBLIC_URL + "/Payal_Gupta_Resume.pdf"}
-              download="Payal_Gupta_Resume.pdf"
+              href={process.env.PUBLIC_URL + "/Payal_Gupta_Resume.docx"}
+              download="Payal_Gupta_Resume.docx"
             >
               Download Resume <FiDownload />
             </a>
 
             <div className="hero__socials">
-              <a href="https://github.com/payalgupta2005" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <a href="https://github.com/payalgupta2005" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com/in/payal-gupta2005/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <a href="https://linkedin.com/in/payal-gupta2005/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <FaLinkedinIn />
               </a>
-              <a href="mailto:payalgupta020405@gmail.com" aria-label="Email">
+              <a
+                href={GMAIL_COMPOSE}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Email"
+                title={EMAIL}
+              >
                 <FaEnvelope />
               </a>
             </div>
@@ -48,13 +59,15 @@ export default function Hero() {
 
         <div className="hero__visual">
           <div className="hero__ring">
-            <img src={Profile} alt="Payal Gupta" className="hero__avatar" />
+            <span className="hero__monogram" aria-label="Payal Gupta">
+              PG
+            </span>
           </div>
           <span className="hero__badge hero__badge--1">
             <SiReact />
           </span>
           <span className="hero__badge hero__badge--2">
-            <SiHtml5 />
+            <SiMysql />
           </span>
           <span className="hero__badge hero__badge--3">
             <SiDotnet />
