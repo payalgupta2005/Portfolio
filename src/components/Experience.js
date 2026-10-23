@@ -42,7 +42,7 @@ const experiences = [
   {
     role: "Software Development Intern",
     company: "Bluestock Fintech",
-    period: "[TODO: Month Year – Month Year] (3 months)",
+    period: "Sep 2025 – Nov 2025 (3 months)",
     points: [
       "Developed a full-stack website with responsive user interfaces connected to backend services.",
       "Designed and built RESTful APIs and integrated them with the frontend for dynamic data handling.",
