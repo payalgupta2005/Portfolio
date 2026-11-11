@@ -1,0 +1,60 @@
+.hero { min-height: 100vh; display: grid; place-items: center; text-align: center; position: relative; overflow: hidden; padding-top: 90px; }
+.blob { position: absolute; border-radius: 50%; filter: blur(100px); opacity: .4; animation: float 16s ease-in-out infinite; pointer-events: none; }
+.b1 { width: 440px; height: 440px; background: #0891b2; top: -100px; left: -120px; }
+.b2 { width: 480px; height: 480px; background: #7c3aed; bottom: -140px; right: -120px; animation-delay: -5s; }
+.b3 { width: 300px; height: 300px; background: #ee2f8a; top: 55%; left: 38%; opacity: .18; animation-delay: -9s; }
+@keyframes float { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(40px, -50px) scale(1.12); } }
+.hero-in { position: relative; z-index: 1; animation: rise 1s var(--ease) both; }
+@keyframes rise { from { opacity: 0; transform: translateY(30px); } }
+.welcome { color: var(--accent); letter-spacing: .4em; font-weight: 700; font-size: .95rem; margin-bottom: 1.2rem; }
+.hero h1 { font-size: clamp(2.6rem, 8vw, 5.5rem); font-weight: 900; line-height: 1.1; }
+.n1 { background: linear-gradient(90deg, #e11d8a, #00bfff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.n2 { background: linear-gradient(90deg, #00bfff, #5b7fdc); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.role { font-size: clamp(1.4rem, 3.5vw, 2.3rem); font-weight: 700; margin: 1.2rem 0 .8rem; min-height: 1.4em; }
+.caret { display: inline-block; width: 3px; height: 1em; margin-left: 4px; background: var(--accent); vertical-align: -.12em; animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+.intro { max-width: 620px; margin: 0 auto 2rem; color: var(--muted); }
+.cta { display: flex; gap: 1.4rem; justify-content: center; flex-wrap: wrap; }
+.socials { display: flex; gap: .9rem; justify-content: center; margin-top: 2.2rem; }
+.socials a { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--border); transition: .3s var(--ease); }
+.socials a:hover { background: var(--grad-btn); color: #fff; transform: translateY(-5px); border-color: transparent; }
+
+/* ---------- Hero buttons (Amit jaisa 3D press effect) ---------- */
+.cta .btn-wa,
+.cta .btn-cv {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+
+/* Green WhatsApp */
+.cta .btn-wa { background: #22c55e; box-shadow: 0 6px 0 #15803d; }
+.cta .btn-wa:hover { transform: translateY(-3px); box-shadow: 0 9px 0 #15803d, 0 14px 26px rgba(34, 197, 94, .35); }
+
+/* Blue Resume */
+.cta .btn-cv { background: #00b4ff; box-shadow: 0 6px 0 #5b21b6; }
+.cta .btn-cv:hover { transform: translateY(-3px); box-shadow: 0 9px 0 #5b21b6, 0 14px 26px rgba(0, 180, 255, .35); }
+
+/* Dabane pe button neeche dhans jata hai */
+.cta .btn-wa:active,
+.cta .btn-cv:active { transform: translateY(5px); box-shadow: 0 1px 0 rgba(0, 0, 0, .4); }
+
+/* Icon halka hilta hai hover pe */
+.cta .btn-wa:hover svg,
+.cta .btn-cv:hover svg { animation: wiggle .5s ease; }
+@keyframes wiggle { 25% { transform: rotate(-12deg); } 75% { transform: rotate(12deg); } }
+
+@media (max-width: 480px) {
+  .cta { gap: 1.1rem; }
+  .cta .btn-wa, .cta .btn-cv { width: 100%; max-width: 260px; }
+}

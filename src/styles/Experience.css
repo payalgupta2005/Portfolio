@@ -1,0 +1,183 @@
+#experience {
+  padding: 40px 0;
+}
+
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 1100px;
+  margin: 28px auto 0;
+}
+
+/* Tilt ke liye perspective */
+.exp-tilt {
+  perspective: 1200px;
+}
+
+.exp-card {
+  --rx: 0deg;
+  --ry: 0deg;
+  position: relative;
+  display: flex;
+  border-radius: 22px;
+  background: #111114;
+  border: 1px solid rgba(0, 200, 255, 0.55);
+  box-shadow: 0 0 24px rgba(0, 200, 255, 0.12);
+  transform: rotateX(var(--rx)) rotateY(var(--ry));
+  transition: transform 0.15s ease-out, box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.exp-card:hover {
+  border-color: rgba(217, 70, 239, 0.8);
+  box-shadow: 0 12px 40px rgba(139, 92, 246, 0.35),
+    0 0 28px rgba(0, 200, 255, 0.25);
+}
+
+/* Left gradient panel */
+.exp-left {
+  flex: 0 0 26%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 18px 16px;
+  text-align: center;
+  color: #fff;
+  border-radius: 22px 0 0 22px;
+  background: linear-gradient(160deg, #8b5cf6 0%, #e11df0 45%, #00d4e6 100%);
+  background-size: 200% 200%;
+  background-position: 0% 0%;
+  transition: background-position 0.6s ease;
+}
+
+.exp-card:hover .exp-left {
+  background-position: 100% 100%;
+}
+
+.exp-building {
+  font-size: 26px;
+  color: #00e5ff;
+}
+
+.exp-left h4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.exp-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Beech wala circle badge */
+.exp-badge {
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  color: #fff;
+  background: #00c8f0;
+  box-shadow: 0 0 0 5px #111114, 0 0 18px rgba(0, 200, 240, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.exp-card:hover .exp-badge {
+  transform: translate(-50%, -50%) scale(1.1) rotate(-8deg);
+}
+
+/* Right content */
+.exp-right {
+  flex: 1;
+  padding: 20px 28px 20px 52px;
+}
+
+.exp-right h3 {
+  margin: 0 0 12px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff4d8d, #ff6a6a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.exp-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.exp-right li {
+  position: relative;
+  padding-left: 30px;
+  line-height: 1.45;
+  font-size: 0.95rem;
+}
+
+/* Gradient dash bullet */
+.exp-right li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #8b5cf6, #00d4e6);
+  transition: width 0.3s ease;
+}
+
+.exp-right li:hover::before {
+  width: 24px;
+}
+
+/* Mobile: upar gradient panel, neeche content */
+@media (max-width: 768px) {
+  .exp-card {
+    flex-direction: column;
+  }
+  .exp-left {
+    flex: none;
+    border-radius: 22px 22px 0 0;
+    padding: 20px 16px 36px;
+  }
+  .exp-badge {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: -26px auto 0;
+    transform: none;
+  }
+  .exp-card:hover .exp-badge {
+    transform: scale(1.1) rotate(-8deg);
+  }
+  .exp-right {
+    padding: 14px 18px 20px;
+  }
+  .exp-right h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
