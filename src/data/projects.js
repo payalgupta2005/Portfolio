@@ -36,8 +36,8 @@ export const projects = [
     id: 'uniscaler',
     title: 'Uniscaler – College Comparison Platform',
     category: 'Full Stack',
-    period: '3 Months · Freelance',
-    org: 'Freelance Full Stack Developer',
+    period: '4 Months · Freelance',
+    org: 'Freance Full Stack Developer',
     images: [],
     short: 'Educational discovery platform with college search, filtering and student inquiries.',
     description:

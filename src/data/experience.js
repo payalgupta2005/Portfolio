@@ -1,24 +1,38 @@
 // Latest role pehle. Points apne hisaab se edit kar sakti ho (max 3-4 rakho).
 export const experience = [
   {
-    role: 'Software Developer',
+    role: 'Full Stack Developer',
     company: 'Bluglint Solutions',
-    period: 'September 2026 - Present',
+    period: 'June 2026 - Present',
     points: [
-      'Develop JWT-secured REST APIs in ASP.NET Core and MySQL for user and company profiles, job postings, drafts, and applications on skilljobz.com.',
-      'Built CRON jobs for automatic draft deletion and implemented role-based authorization using stored procedures.',
-      'Build React.js interfaces for login, registration, and recruiter profiles, integrated with backend APIs.',
-      'Test and document APIs with Postman and Swagger for smooth frontend-backend integration.',
+      'Developed and maintained full-stack features for SkillJobz (skilljobz.com), a job portal, using React.js, ASP.NET Web API (C#), MySQL, and ASP.NET Web Forms for the Admin CMS.',
+      'Built secure Login and Registration APIs with JWT-based authentication and role-based authorization, supporting different user roles and protected application workflows.',
+      'Developed RESTful CRUD APIs for User Profiles, Recruiter and Company Profiles, Job Postings, Draft Jobs, and Job Applications using a stored-procedure-driven MySQL backend.',
+      'Implemented job posting and application workflows, including draft management and automated CRON jobs for deleting expired drafts after a specified retention period.',
+      'Developed Admin CMS modules using ASP.NET Web Forms, including session-based authentication and management features for users, roles, companies, jobs, and applications.',
+      'Designed and integrated React.js user interfaces for Login, Registration, Recruiter Profile, and Job Posting workflows, using Git/GitHub-based version control.',
+      'Built responsive web interfaces, including Home, Navbar, Jobs, and Company card components, and integrated frontend workflows with backend APIs.',
+    ],
+  },
+  {
+    role: 'Full Stack Developer (Freelance)',
+    company: 'Uniscaler (uniscaler.in)',
+    period: 'February 2026 - May 2026',
+    points: [
+      'Developed REST APIs for college and university information, supporting the retrieval and management of institutional data.',
+      'Implemented APIs for university-specific courses and student inquiry workflows, integrating backend services with the application interface.',
+      'Built responsive React.js user interfaces for college discovery and student login workflows.',
+      'Developed college search and filtering functionality to help students discover and explore relevant colleges and institutions.',
     ],
   },
   {
     role: 'Software Development Intern',
-    company: 'Bluglint Solutions',
-    period: 'June 2026 - August 2026',
+    company: 'Bluestock Fintech',
+    period: 'November 2025 - January 2026',
     points: [
-      'Built the Admin CMS for skilljobz.com using ASP.NET Web Forms.',
-      'Implemented session-based login to secure access to admin pages.',
-      'Developed Role, User, Company, Job, and Application management modules.',
+      'Developed a full-stack website with responsive user interfaces connected to backend services.',
+      'Designed and built RESTful APIs and integrated them with the frontend for dynamic data handling.',
+      'Tested API endpoints, debugged integration issues, and followed Git-based version control practices.',
     ],
   },
 ]

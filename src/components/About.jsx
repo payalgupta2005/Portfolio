@@ -52,13 +52,11 @@ export default function About() {
             </p>
             <p>
               I work as a Full Stack Developer at Bluglint Solutions on skilljobz.com, a job portal
-              platform. I design and develop secure REST APIs for user, recruiter, and company
-              profiles, job postings, draft jobs, and job applications using ASP.NET Web API and a
-              stored-procedure-driven MySQL backend. I built the Admin CMS with ASP.NET Web Forms,
-              including session-based authentication and modules for Roles, Users, Companies, Jobs,
-              and Applications, implemented automated CRON jobs for expired draft cleanup, and
-              developed React.js interfaces for login, registration, and recruiter profiles with
-              seamless API integration.
+              platform. I develop secure REST APIs for user, recruiter, and company profiles, job
+              postings, drafts, and applications using ASP.NET Web API and a stored-procedure-driven
+              MySQL backend. I built the Admin CMS with ASP.NET Web Forms, implemented CRON jobs for
+              expired draft cleanup, and developed React.js interfaces for login, registration, and
+              recruiter profiles with seamless API integration.
             </p>
             <p>
               Alongside my full-time role, I work as a freelance Full Stack Developer on Uniscaler
@@ -71,18 +69,16 @@ export default function About() {
             </p>
             <p>
               On the frontend, I work with React.js, JavaScript (ES6+), HTML5, CSS3, React Router,
-              React Hooks, Tailwind CSS, and Bootstrap to build responsive, user-friendly
-              interfaces. On the backend, I use C#, ASP.NET Web API, ASP.NET Core, ASP.NET MVC,
-              ADO.NET, Entity Framework Core, and Dependency Injection with MySQL and SQL Server.
-              I follow secure development practices such as JWT authentication, refresh token
-              rotation, OTP verification, and input validation, and I use Git, GitHub, Postman,
-              and Swagger for version control, API testing, and documentation.
+              Tailwind CSS, and Bootstrap. On the backend, I use C#, ASP.NET Web API, ASP.NET Core,
+              ADO.NET, and Entity Framework Core with MySQL and SQL Server, following secure
+              practices such as JWT authentication and input validation. I use Git, GitHub,
+              Postman, and Swagger for version control, API testing, and documentation.
             </p>
             <p>
-              Beyond my professional work, I built Foodie Fest, a food ordering web app in React.js
-              with a state-driven cart and restaurant search, filtering, and sorting. I completed my
-              BCA from Maharshi Dayanand University in 2026 with a CGPA of 8.9, secured a place on
-              the university merit list, and completed the GenAI Ready Naari Program (40 hours).
+              Beyond work, I built Foodie Fest, a food ordering web app in React.js with a
+              state-driven cart and search, filtering, and sorting. I completed my BCA from
+              Maharshi Dayanand University in 2026 with a CGPA of 8.9, secured a place on the
+              university merit list, and completed the GenAI Ready Naari Program.
             </p>
           </Reveal>
         </div>
